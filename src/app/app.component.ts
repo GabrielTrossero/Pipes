@@ -10,8 +10,12 @@ export class AppComponent {
   //CurrentcyPipe (divisa)
   precio: number;
 
+  //DecimalPipe
+  numero: number;
+
   constructor() {
     this.precio = 189.99;
+    this.numero = 3.5641;
   }
 
 }

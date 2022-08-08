@@ -1,9 +1,16 @@
+<h3>Currency Pipe</h3>
+<p>Precio: {{precio}}</p>
 <p>Precio: {{precio | currency}}</p>
-
 <p>Precio: {{precio | currency:'EUR'}}</p>
-
 <p>Precio: {{precio | currency:'EUR':'code'}}</p>
 
 <!--4 es la cantidad mínima de numeros en el primer decimal-->
 <!--1 es la cantidad mínima y 2 la cantidad máxima de numeros en el segundo decimal-->
 <p>Precio: {{precio | currency:'EUR':'code':'4.1-2'}}</p>
+
+
+<h3>Decimals Pipe</h3>
+<p>Número: {{numero}}</p>
+<p>Número: {{numero | number}}</p>
+<!--1 min primer decimal, 1 min 2 max segundo decimal-->
+<p>Número: {{numero | number:'1.1-2'}}</p>
