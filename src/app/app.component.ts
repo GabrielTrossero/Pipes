@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Pipes';
+
+  //CurrentcyPipe (divisa)
+  precio: number;
+
+  constructor() {
+    this.precio = 189.99;
+  }
+
 }
