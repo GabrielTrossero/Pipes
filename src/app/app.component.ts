@@ -22,6 +22,14 @@ export class AppComponent {
   //JSONPipe
   estudiante: any;
 
+  //Lower, Upper, Title
+  texto: string;
+
+  //SlicePipe
+  animales: string[];
+  minimo: number;
+  maximo: number;
+
   constructor() {
     this.precio = 189.99;
     this.numero = 3.5641;
@@ -32,6 +40,10 @@ export class AppComponent {
       apellido: 'Gonzales',
       edad: '33'
     }
+    this.texto = "En un lugar de la Mancha"
+    this.animales = ['perro', 'gato', 'caballo', 'pato'];
+    this.minimo = 0;
+    this.maximo = this.animales.length;
   }
 
 }
