@@ -13,9 +13,13 @@ export class AppComponent {
   //DecimalPipe
   numero: number;
 
+  //DatePipe
+  fechaActual: Date;
+
   constructor() {
     this.precio = 189.99;
     this.numero = 3.5641;
+    this.fechaActual = new Date();
   }
 
 }
