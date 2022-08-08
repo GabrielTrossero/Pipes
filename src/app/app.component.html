@@ -8,6 +8,7 @@
 <!--1 es la cantidad mínima y 2 la cantidad máxima de numeros en el segundo decimal-->
 <p>Precio: {{precio | currency:'EUR':'code':'4.1-2'}}</p>
 
+<br>
 
 <h3>Decimals Pipe</h3>
 <p>Número: {{numero}}</p>
@@ -15,6 +16,7 @@
 <!--1 min primer decimal, 1 min 2 max segundo decimal-->
 <p>Número: {{numero | number:'1.1-2'}}</p>
 
+<br>
 
 <h3>Date Pipe</h3>
 <p>Fecha: {{fechaActual}}</p>
@@ -24,8 +26,15 @@
 <p>Fecha: {{fechaActual | date:'shortTime'}}</p>
 <p>Fecha: {{fechaActual | date:'dd-MM-yyyy'}}</p>
 
+<br>
 
 <h3>Percent Pipe</h3>
 <p>Número: {{percent}}</p>
 <p>Número: {{percent | percent}}</p>
 <p>Número: {{percent | percent:'1.1-2'}}</p>
+
+<br>
+
+<h3>JSON Pipe</h3>
+<p>{{estudiante}}</p>
+<p>{{estudiante | json}}</p>

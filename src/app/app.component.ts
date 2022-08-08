@@ -19,11 +19,19 @@ export class AppComponent {
   //PercentPipe
   percent: number;
 
+  //JSONPipe
+  estudiante: any;
+
   constructor() {
     this.precio = 189.99;
     this.numero = 3.5641;
     this.fechaActual = new Date();
     this.percent = Math.random();
+    this.estudiante = {
+      nombre: 'Roberto',
+      apellido: 'Gonzales',
+      edad: '33'
+    }
   }
 
 }
