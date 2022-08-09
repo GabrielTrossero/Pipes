@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PostsService } from './services/posts.service';
 
 @Component({
   selector: 'app-root',
@@ -30,7 +31,11 @@ export class AppComponent {
   minimo: number;
   maximo: number;
 
-  constructor() {
+  //AsyncPipe
+  prom: Promise<string>;
+  promPosts: Promise<any[]>;
+
+  constructor(private postService:PostsService) {
     this.precio = 189.99;
     this.numero = 3.5641;
     this.fechaActual = new Date();
@@ -44,6 +49,12 @@ export class AppComponent {
     this.animales = ['perro', 'gato', 'caballo', 'pato'];
     this.minimo = 0;
     this.maximo = this.animales.length;
+
+    this.prom = new Promise((resolve, reject) => {
+      setTimeout(() => resolve('Se resuelve la promesa pasados los 4 segundos'), 4000)
+    });
+
+    this.promPosts = this.postService.getAll();
   }
 
 }

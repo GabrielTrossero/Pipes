@@ -61,3 +61,17 @@
 </ul>
 <input type="range" min="0" [max]="animales.length" step="1" [(ngModel)]="minimo">
 <input type="range" min="0" [max]="animales.length" step="1" [(ngModel)]="maximo">
+
+<br>
+
+<h3>Async Pipe</h3>
+<!--Promesa que puedo resolver directamente en el HTML, sin necesidad 
+  de async await o then catch-->
+<p>Mensaje: {{prom | async}}</p>
+
+<!--Promesa resuelta en HTML, obtenida a través de un servicio-->
+<ul>
+  <li *ngFor="let post of promPosts | async | slice:0:10">
+    {{post.title}}
+  </li>
+</ul>
