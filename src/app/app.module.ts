@@ -7,12 +7,14 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ReversoPipe } from './pipes/reverso.pipe';
 
 registerLocaleData(localeEs); //debe cargar antes que todo
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReversoPipe
   ],
   imports: [
     BrowserModule,
