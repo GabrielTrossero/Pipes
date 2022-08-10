@@ -35,7 +35,7 @@ export class AppComponent {
   prom: Promise<string>;
   promPosts: Promise<any[]>;
 
-  constructor(private postService:PostsService) {
+  constructor(private postService: PostsService) {
     this.precio = 189.99;
     this.numero = 3.5641;
     this.fechaActual = new Date();

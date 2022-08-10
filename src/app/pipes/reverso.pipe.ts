@@ -12,7 +12,7 @@ export class ReversoPipe implements PipeTransform {
     const arrReverso = arrValue.reverse();
     return arrReverso.join(''); //contrario a split
     */
-   
+
     //Resumido en una linea
     return value.toString().split('').reverse().join('');
   }
